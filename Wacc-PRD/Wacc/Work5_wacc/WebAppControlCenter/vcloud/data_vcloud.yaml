@@ -1,0 +1,28 @@
+user:
+  vcloud_ip: "10.10.21.155"
+  username: "administrator@system"
+  password: "6yHnmju&"
+spac:
+  cpu: 2
+  limit_cpu: 2000
+  mem: 4
+  limit_mem: 2000
+  disk: 100
+  AllocationModel: "AllocationVApp"
+
+
+
+#
+#onemail:
+#  data_1:
+#    username : ["ad-test@patkol.com"]
+#    password : ["@d2018Test"]
+#    hostname : "inetmail.cloud"
+#sendmail:
+#    receiver_list : ["sirirat.me@inet.co.th","shanakan.ph@inet.co.th"]
+#    login_sender : ["ad-test@patkol.com"]
+#    login_pwd : "@d2018Test"
+#timeout: "30"
+#alert:
+##  line_id: 'U69a3725f1fbfdbba7de63cd4a45fc6f4'
+#    line_id: 'U31aa4b494997f9f3576dbab5900673c8'

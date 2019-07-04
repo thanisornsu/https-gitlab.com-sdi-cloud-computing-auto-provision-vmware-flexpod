@@ -1,0 +1,12 @@
+network:
+  status:
+    available:
+      ip_internal_start : ["192.168.10.1"]
+      ip_internal_end : ["192.168.10.253"]
+      ip_external_start : ["203.150.67.112"]
+      ip_external_end : ["203.150.67.113"]
+    unavailable:
+      ip_internal_start : [""]
+      ip_internal_end : [""]
+      ip_external_start : [""]
+      ip_external_end : [""]

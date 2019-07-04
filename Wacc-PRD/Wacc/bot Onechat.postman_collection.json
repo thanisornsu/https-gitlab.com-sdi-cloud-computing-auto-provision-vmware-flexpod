@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "05c8fff6-cf7d-44fe-951d-52d975b64d9f",
+		"name": "bot Onechat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "เพื่อนของ bot",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer A770d26fc4c4f5a80bd292ca15dac1aac81f425e3f7d145da8489c5bc4b7c4d3e232c7748e8b5450a829020ce47fd3064",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"bot_id\" : \"B9c0b6b353b05542aa402e22490b4d381\"\r\n  }"
+				},
+				"url": {
+					"raw": "https://chat-manage.one.th:8997/api/v1/getlistroom",
+					"protocol": "https",
+					"host": [
+						"chat-manage",
+						"one",
+						"th"
+					],
+					"port": "8997",
+					"path": [
+						"api",
+						"v1",
+						"getlistroom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ค้นหาเพื่อน",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer A2ad3181f01c05887996aa106a0100d9720e562e708ad44ec989cf106d52fcdb31ebb922f2ec0434c8a9ae94c71c93d77",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"bot_id\" : \"Ba08f3068e50c505bb424d5313dfe1088\",\r\n    \"key_search\" : \"1533542700\"\r\n\r\n  }\r\n    "
+				},
+				"url": {
+					"raw": "https://chat-manage.one.th:8997/api/v1/getlistroom",
+					"protocol": "https",
+					"host": [
+						"chat-manage",
+						"one",
+						"th"
+					],
+					"port": "8997",
+					"path": [
+						"api",
+						"v1",
+						"getlistroom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ส่งข้อความ",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer A770d26fc4c4f5a80bd292ca15dac1aac81f425e3f7d145da8489c5bc4b7c4d3e232c7748e8b5450a829020ce47fd3064",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"to\": \"Uf3aea559553355de9adeb24941bdfc86\",\r\n\t\"bot_id\": \"B9c0b6b353b05542aa402e22490b4d381\",\r\n\t\"type\": \"text\",\r\n\t\"message\": \"Hi!!\"\r\n}"
+				},
+				"url": {
+					"raw": "https://chat-public.one.th:8034/api/v1/push_message",
+					"protocol": "https",
+					"host": [
+						"chat-public",
+						"one",
+						"th"
+					],
+					"port": "8034",
+					"path": [
+						"api",
+						"v1",
+						"push_message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ส่งไฟล์",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer A2ad3181f01c05887996aa106a0100d9720e562e708ad44ec989cf106d52fcdb31ebb922f2ec0434c8a9ae94c71c93d77",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "to",
+							"value": "Ub50d0d286c25575ab9c0d4c85a30c745",
+							"type": "text"
+						},
+						{
+							"key": "bot_id",
+							"value": "Ba08f3068e50c505bb424d5313dfe1088",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "file",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"value": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://chat-public.one.th:8034/api/v1/push_message",
+					"protocol": "https",
+					"host": [
+						"chat-public",
+						"one",
+						"th"
+					],
+					"port": "8034",
+					"path": [
+						"api",
+						"v1",
+						"push_message"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

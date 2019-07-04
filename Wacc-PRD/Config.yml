@@ -1,0 +1,23 @@
+# Enable debug mode
+debug: false
+
+# Server configuration
+server:
+  name: Webhook API
+  host: 0.0.0.0
+  port: 8506
+
+# Cryptography
+crypto:
+  secrete_key: uKHhFar8V2krQecu2ZjaPZxcTzzgb6jqhxHuTmAh7WAENYd2QuKYDj5Pu2S55xa6
+#uKHhFar8V2krQecu2ZjaPZxcTzzgb6jqhxHuTmAh7WAENYd2QuKYDj5Pu2S55xa6
+ssl:
+  ca: csr_cert.pem
+  key: nopass.key
+  password : 17Cloud@inet!
+
+# ONECHAT
+notify:
+  botid: B54c5474b368b5eba88bc9559c083ada2
+
+#B29d0b7d7f77f5713805c43d5bfdac66c

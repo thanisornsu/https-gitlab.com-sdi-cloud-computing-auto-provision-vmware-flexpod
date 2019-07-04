@@ -1,0 +1,17 @@
+template:
+    - template_name: "Window Server 2012 r2"
+      template_id: "e05ab043-9f0f-47bb-85dc-d829df388c08"
+      CPU: "1 Core"
+      Memory: "4 GB"
+      Disk: "40 GB"
+    - template_name: "Fortigate"
+      template_id: "d3f8460c-f1d3-4970-9cec-6af1daf71958"
+      CPU: "1 Core"
+      Memory: "1 GB"
+      Disk: "5 GB"
+    - template_name: "Centos 7"
+      template_id: "04d9ed8b-03d1-4e31-934b-ca8962de63ff"
+      CPU: "1 Core"
+      Memory: "2 GB"
+      Disk: "20 GB"
+
