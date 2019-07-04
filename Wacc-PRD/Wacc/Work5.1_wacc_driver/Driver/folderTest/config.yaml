@@ -1,0 +1,7 @@
+network:
+  address:
+    - 8.8.8.8
+    - www.facebook.com
+    - www.google.co.th
+    - 1.1.1.1
+
